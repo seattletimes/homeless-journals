@@ -1,0 +1,96 @@
+@import "seattletimes";
+
+body {
+  margin: 0;
+  background: @df-dark-gray;
+  background-image: linear-gradient(@df-dark-gray, darken(@df-dark-gray, 10%));
+  background-attachment: fixed;
+  color: @df-off-white;
+}
+
+h1, h2 {
+  color: @df-off-white;
+}
+
+header.intro {
+  text-align: center;
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .credits {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-family: @df-sans;
+  }
+
+  .row {
+    .display-flex();
+    .align-items(center);
+    padding: 40px;
+  }
+
+  .text-video {
+    .flex(0 0 50%);
+    padding: 40px;
+    text-align: left;
+
+    .video-container {
+      margin: 20px 0;
+    }
+  }
+}
+
+.video-container {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: percentage(9 / 16);
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.portrait-grid {
+  .display-flex();
+  .flex-wrap(wrap);
+  .justify-content(center);
+
+  .grid-item {
+    .flex(0 0 20%);
+    padding: 1px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+article.story {
+  margin: auto;
+  padding: 20px;
+  max-width: 600px;
+}
+
+@import "flipbook";
+
+.placeholder {
+  padding: 80px;
+  text-align: center;
+  font-family: @df-sans;
+  text-transform: uppercase;
+  background: @df-dark-gray;
+}

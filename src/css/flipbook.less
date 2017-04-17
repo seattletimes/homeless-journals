@@ -1,0 +1,143 @@
+@keyframes open-left-page {
+  from { transform: rotateY(0.5turn) perspective(1000px) }
+  to { transform: rotateY(0) perspective(1000px) }
+}
+
+@keyframes open-right-page {
+  from { transform: rotateY(-0.5turn) perspective(1000px) }
+  to { transform: rotateY(0) perspective(1000px) }
+}
+
+@keyframes cue-left-page {
+  from { transform: rotateY(-3deg) }
+  to { transform: rotateY(0) }
+}
+
+@keyframes cue-right-page {
+  from { transform: rotateY(3deg) }
+  to { transform: rotateY(0) }
+}
+
+@keyframes rise {
+  from { transform: translateZ(-50px) perspective(1000px) }
+  to { transform: translateZ(50px) perspective(1000px) }
+}
+
+.journal-pages {
+  background: @df-off-black;
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+
+  color: @df-dark-gray;
+  h1, h2 {
+    color: @df-dark-gray;
+  }
+
+  .page {
+    .display-flex();
+    .align-items(center);
+    .justify-content(space-around);
+    .align-items(stretch);
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+
+    &.hidden {
+      display: none;
+    }
+
+    &.outgoing {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .illusory {
+      position: absolute;
+      top: 0;
+      width: 50%;
+      z-index: 99;
+    }
+
+    &.flip-forward {
+      // animation: rise 1s linear;
+      .scan {
+        animation: open-left-page 1s ease-in-out;
+      }
+
+      .text {
+        animation: cue-right-page 1s ease-in-out;
+      }
+
+      .illusory.text {
+        animation: open-right-page 1s reverse ease-in-out;
+        left: 50%;
+      }
+    }
+
+    &.flip-backward {
+      // animation: rise 1s linear;
+      .text {
+        animation: open-right-page 1s ease-in-out;
+      }
+      .scan {
+        animation: cue-left-page 1s ease-in-out;
+        z-index: -1;
+      }
+
+      .illusory.scan {
+        animation: open-left-page 1s reverse ease-in-out;
+        left: 0;
+      }
+    }
+
+    &.intro {
+      .scan:not(.illusory) {
+        background: black;
+        img {
+          opacity: 0;
+        }
+      }
+    }
+
+  }
+
+  .face {
+    backface-visibility: hidden;
+    cursor: pointer;
+  }
+
+  .scan {
+    .flex(0 0 50%);
+    transform-origin: right;
+  }
+
+  .text {
+    .flex(0 0 50%);
+    background: #F2F3E3;
+    color: @df-dark-gray;
+    .display-flex();
+    .flex-direction(column);
+    .justify-content(center);
+    transform-origin: left;
+    transform-style: preserve-3d;
+
+    .contents {
+      padding: 0 40px;
+      font-size: 16px;
+      font-family: @df-sans;
+    }
+  }
+
+  &.no-js {
+    .page {
+      margin-bottom: 40px;
+      
+      &:nth-child(2n) .scan {
+        .flex-order(1);
+      }
+    }
+  }
+}

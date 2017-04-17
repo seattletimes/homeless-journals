@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <%= t.include("partials/_head.html") %>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <%= t.include("partials/_nav.html") %>
+
+    <header class="intro">
+
+      <h1>Field Notes</h1>
+
+      <h2>Deck goes here and here and here</h2>
+
+      <ul class="credits">
+        <li> Written by Tyrone Beason
+        <li> Photos by Erika Schultz
+        <li> Video by Lauren Frohne
+        <li> Development by Thomas Wilburn
+      </ul>
+
+      <div class="row">
+
+        <div class="text-video">
+
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/a1Y73sPHKxw" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          Seattle's city government cleared the "Field of Dreams" homeless encampment earlier this year. These are the stories of the people who lived there, in their own words. Click a portrait in the grid to the right for each person's journal page.
+
+        </div>
+
+        <div class="portrait-grid">
+          <% json.journals.forEach(function(page, i) { %>
+          <a href="#page-<%= i %>" class="grid-item">
+            <img src="./assets/sample_<%= Math.random() > .5 ? "thumbnail" : "excerpt" %>.jpg">
+          </a>
+          <% }) %>
+        </div>
+
+      </div>
+
+    </header>
+
+    <article class="story part-a">
+      <%= markdown.storyA %>
+    </article>
+
+    <div class="journal-pages no-js">
+      <div class="intro page">
+        <div class="scan face">
+          <img src="./assets/sample_page.jpg">
+        </div>
+        <div class="text face">
+          <div class="contents">
+            <h1>The portrait gallery</h1>
+            <p>
+              Click to flip pages.
+          </div>
+        </div>
+      </div>
+      <% json.journals.forEach(function(page, i) { %>
+      <div class="page" data-index="<%= i %>" id="page-<%= i %>">
+        <div class="scan face">
+          <img src="<%= i % 2 ? "./assets/sample_page.jpg" : "./assets/sample_page_inverted.jpg" %>">
+        </div>
+        <div class="text face">
+          <div class="contents">
+            <h1><%= page.name %></h1>
+            <h2>Age: <%= page.age %></h2>
+
+            <p>
+              <%= page.text %>
+          </div>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+
+    <article class="story part-b">
+      <%= markdown.storyB %>
+    </article>
+
+    <div class="placeholder">
+      Break here - good place for photos or more video?
+    </div>
+
+    <article class="story part-c">
+      <%= markdown.storyC %>
+    </article>
+
+    <%= t.include("partials/_navBottom.html") %>
+
+    <script src="app.js" async></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_foot.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>
