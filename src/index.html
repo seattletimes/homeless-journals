@@ -58,8 +58,9 @@
           <div class="contents">
             <h1>The portrait gallery</h1>
             <p>
-              Click to flip pages.
+              Click the left or right edges to flip pages.
           </div>
+          <div class="edge"></div>
         </div>
       </div>
       <% json.journals.forEach(function(page, i) { %>
@@ -75,6 +76,7 @@
             <p>
               <%= page.text %>
           </div>
+          <div class="edge"></div>
         </div>
       </div>
       <% }) %>

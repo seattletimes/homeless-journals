@@ -113,7 +113,6 @@
 
   .face {
     backface-visibility: hidden;
-    cursor: pointer;
   }
 
   .scan {
@@ -134,7 +133,7 @@
       left: 0;
       width: 10%;
       height: 100%;
-      background: linear-gradient(to left, transparent, fade(black, 50%));
+      background: linear-gradient(to left, transparent, fade(black, 20%));
       opacity: .5;
       transition: opacity .2s linear;
 
@@ -159,6 +158,23 @@
       padding: 0 40px;
       font-size: 16px;
       font-family: @df-sans;
+    }
+
+    .edge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20%;
+      height: 100%;
+      z-index: 99;
+      background: linear-gradient(to right, transparent, fade(black, 20%));
+      opacity: .5;
+      transition: opacity .2s linear;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 

@@ -45,7 +45,8 @@ $(".journal-pages .page").forEach(function(el, i) {
   if (i > 0) el.classList.add("hidden");
   var image = $.one(".scan img", el);
   image.addEventListener("click", () => toggleZoom(el));
-  var edge = $.one(".scan .edge", el);
-  if (edge) edge.addEventListener("click", () => flipPages(el, "backward"));
-  $.one(".text", el).addEventListener("click", () => flipPages(el, "forward"));
+  var leftEdge = $.one(".scan .edge", el);
+  if (leftEdge) leftEdge.addEventListener("click", () => flipPages(el, "backward"));
+  var rightEdge = $.one(".text .edge", el);
+  if (rightEdge) rightEdge.addEventListener("click", () => flipPages(el, "forward"));
 });
