@@ -28,6 +28,8 @@
   position: relative;
   overflow: hidden;
   transform-style: preserve-3d;
+  margin: auto;
+  max-width: 1600px;
 
   color: @df-dark-gray;
   h1, h2 {
@@ -40,7 +42,7 @@
     .justify-content(space-around);
     .align-items(stretch);
     position: relative;
-    perspective: 1000px;
+    perspective: 100vw;
     transform-style: preserve-3d;
 
     &.hidden {
@@ -112,11 +114,15 @@
   .scan {
     .flex(0 0 50%);
     transform-origin: right;
+    img {
+      display: block;
+    }
   }
 
   .text {
     .flex(0 0 50%);
-    background: #F2F3E3;
+    background: #FFFCED;
+    background-image: linear-gradient(to right, desaturate(darken(#FFFCED, 8%), 50%), #FFFCED 10%);
     color: @df-dark-gray;
     .display-flex();
     .flex-direction(column);

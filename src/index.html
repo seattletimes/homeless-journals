@@ -65,12 +65,11 @@
       <% json.journals.forEach(function(page, i) { %>
       <div class="page" data-index="<%= i %>" id="page-<%= i %>">
         <div class="scan face">
-          <img src="<%= i % 2 ? "./assets/sample_page.jpg" : "./assets/sample_page_inverted.jpg" %>">
+          <img src="./assets/pages/<%= page.scan %>">
         </div>
         <div class="text face">
           <div class="contents">
-            <h1><%= page.name %></h1>
-            <h2>Age: <%= page.age %></h2>
+            <h1><%= page.name %>, <%= page.age %></h1>
 
             <p>
               <%= page.text %>
