@@ -1,0 +1,16 @@
+<div class="page-viewer" data-start="<%= start %>">
+  <div class="row">
+    <div class="thumbs">
+      <% for (var i = start; i < start + 8 && i < grunt.data.json.journals.length; i++) { %>
+        <% var page = grunt.data.json.journals[i] %>
+        <div class="thumb" data-index="<%= i %>">
+          <img src="./assets/pages/<%= page.scan %>">
+        </div>
+      <% } %>
+    </div>
+    <div class="feature">
+      <img src="./assets/pages/<%= grunt.data.json.journals[start].scan %>">
+    </div>
+    <div class="text"></div>
+  </div>
+</div>

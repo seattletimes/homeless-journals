@@ -41,6 +41,11 @@ var toggleZoom = function(page) {
   });
 };
 
+journal.addEventListener("doubleclick", e => e.preventDefault());
+journal.addEventListener("click", function(e) {
+
+});
+
 $(".journal-pages .page").forEach(function(el, i) {
   if (i > 0) el.classList.add("hidden");
   var image = $.one(".scan img", el);
