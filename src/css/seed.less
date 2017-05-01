@@ -4,7 +4,7 @@
 body {
   margin: 0;
   background: @df-dark-gray;
-  background-image: linear-gradient(@df-dark-gray, darken(@df-dark-gray, 10%));
+  background-image: linear-gradient(darken(@df-dark-gray, 10%), @df-dark-gray);
   background-attachment: fixed;
   color: @df-off-white;
 }
@@ -14,8 +14,7 @@ h1, h2 {
 }
 
 header.intro {
-  margin: auto;
-  max-width: 1200px;
+  margin: 40px auto;
 
   h1, h2, p {
     margin: 20px auto;

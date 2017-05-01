@@ -25,7 +25,7 @@ On this day, the rodents scurry across the mud and under the pallets that separa
 
 In a matter of weeks, everyone we meet and everything we see here will be gone, swept out of sight at this location. But the gnawing crisis of homelessness will only have slogged to another patch of dirt or pavement in a perverse cycle of settling and uprooting.
 
-<?<%= makeViewer(4) %>?>
+<div class="placeholder">BRIGHTCOVE GOES HERE</div>
 
 At every turn, there are signs of what life must have been like before people found themselves living alongside and under Seattle’s streets.
 
@@ -57,7 +57,7 @@ One section of the camp is open to all, meaning it doesn’t matter if you’re 
 
 “It’s another human life,” he tells me.
 
-<?<%= makeViewer(3) %>?>
+<?<%= makeViewer(4) %>?>
 
 Wherever you lay your hat is your home: If only it were that simple.
 
@@ -65,13 +65,15 @@ If only flowers and fences could ease the constant threat of being swept from pl
 
 If only the concern of reporters could give you immunity from the caprices of a gilded city with more construction cranes than any in America, and more brainpower than it knows what to do with, but that can’t figure out how to stop the mushrooming of shantytowns.
 
-The city has been under pressure to change its approach to the issue. Earlier this year, [Seattle Mayor Ed Murray proposed, then scrapped](http://www.seattletimes.com/seattle-news/politics/seattle-mayor-ed-murray-abandons-plans-for-homelessness-property-tax-levy/), a controversial, five-year, $275 million property-tax levy to battle homelessness on multiple fronts. The new push is for a countywide sales tax increase of 0.1 cents that could raise more money.
+The city has been under pressure to change its approach to the issue. Earlier this year, [Seattle Mayor Ed Murray proposed, then scrapped](http://www.seattletimes.com/seattle-news/politics/seattle-mayor-ed-murray-abandons-plans-for-homelessness-property-tax-levy/), a controversial, five-year, $275 million property-tax levy to battle homelessness on multiple fronts. The new push is for a countywide sales tax increase of 0.1 percent that could raise more money.
+
+In late April, it was announced that billionaire Paul Allen will donate $30 million toward the development of permanent housing for the homeless under the direction of [Mercy Housing](https://www.mercyhousing.org/washington), with the city kicking in an additional $5 million.
 
 Up until now, nothing — certainly not the clearing of encampments — seems to have eased the crisis. And considering the rising cost of living in a metropolitan area, housing and homeless advocates worry that even more people will be at risk.
 
 In 2016, there were more than 4,500 “unsheltered” people sleeping in tents; in doorways; in green spaces; on benches; in cars, trucks and RVs, etc.: a 19 percent increase over the previous year, according to the annual [One Night Count](http://www.homelessinfo.org/what_we_do/one_night_count/2016_results.php) survey by the Seattle/King County Coalition on Homelessness.
 
-<?<%= makeViewer(4) %>?>
+<?<%= makeViewer(3) %>?>
 
 SEVERAL OF THE PEOPLE who speak to us as we search for subjects for this story say they’ve figured out how to live this way long-term.
 
@@ -90,6 +92,8 @@ Ross says he’s done everything from painting and roofing to selling candy and 
 Toiletries are kept at bedside. Hats, gloves, umbrellas and socks hang from a rack against a highway support pillar. Ross keeps a Bible by his cigarette lighter and ashtray, but he hasn’t opened it yet. He says he’s afraid that if he starts to read it, the spirit might move him to reach out to his relatives back home in the Bay Area before he’s ready for that. He wants to have some dental work done and buy a car — get “situated” — before reconnecting.
 
 Others we meet say they’ve struggled to find work and housing after serving time in prison.
+
+<?<%= makeViewer(4) %>?>
 
 We hear that some women in the camps, who make up about a fifth of the population, pair up with men simply for the physical safety they can offer.
 
@@ -113,7 +117,7 @@ He hopes to springboard into more stable accommodations himself, if he can save 
 
 Suezan, who lives in an RV and commutes between Seattle and California where she grows marijuana, says she graduated from a high school in North Seattle and attended the University of Washington.
 
-“I’ve found people here I’ve known since high school,” she says of the camp’s residents, some of whom she claims come from affluent and well-known families. Anyone can wind up in a place like this with a stroke of misfortune. 
+“I’ve found people here I’ve known since high school,” she says of the camp’s residents, some of whom she claims come from affluent and well-known families. Anyone can wind up in a place like this with a stroke of misfortune.
 
 “I get goose-bumps just thinking about it,” she says.
 
@@ -132,6 +136,7 @@ For Jackson, 28, this is personal. Her mom used to live on the streets, she expl
 Showing residents of the camps just a little generosity and humanity goes a long way, she says. So she decided to come back this year.
 
 Jackson took $100 of her savings and turned it into 80 sandwiches. Each person who accepts a sandwich gets a prayer and maybe a hug, if needed.
+
 
 <?<%= makeViewer(4) %>?>
 
