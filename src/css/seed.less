@@ -3,8 +3,7 @@
 
 body {
   margin: 0;
-  background: @df-dark-gray;
-  background-image: linear-gradient(darken(@df-dark-gray, 10%), @df-dark-gray);
+  background: darken(@df-dark-gray, 10%);
   background-attachment: fixed;
   color: @df-off-white;
 }
@@ -24,6 +23,11 @@ header.intro {
   h1 {
     text-align: center;
     margin: 20px auto;
+    font-size: 48px;
+
+    @media @mobile {
+      font-size: 32px;
+    }
   }
 
   .credits {

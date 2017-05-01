@@ -11,8 +11,6 @@ ${t.include("_pageViewer.html", { start: i, count: n })}
 })();
 %>?>
 
-# Portraits of Homelessness
-
 “THEY DON’T BUILD mansions like this in Beverly Hills,” a man named Charles says as he greets visitors to a tent city beneath a tangle of highway overpasses in Seattle’s Sodo District.
 
 It’s a cold, damp day, and Charles warms himself by a smoldering campfire in a cluttered cul-de-sac of tents, bags of clothes, and pots and pans — everything you need when you have no place else to live.
@@ -25,7 +23,7 @@ On this day, the rodents scurry across the mud and under the pallets that separa
 
 In a matter of weeks, everyone we meet and everything we see here will be gone, swept out of sight at this location. But the gnawing crisis of homelessness will only have slogged to another patch of dirt or pavement in a perverse cycle of settling and uprooting.
 
-<div class="placeholder">BRIGHTCOVE GOES HERE</div>
+<?<%= makeViewer(4) %>?>
 
 At every turn, there are signs of what life must have been like before people found themselves living alongside and under Seattle’s streets.
 
@@ -47,7 +45,7 @@ An animator, radio DJ, recording artist, actor and father, Charles says he doesn
 
 But what to make of the situation in which we encountered these most marginalized of our neighbors, people who’ve made a life and in some cases forged community in places that lack running water, safe heating or a clear way out?
 
-<?<%= makeViewer(4) %>?>
+<div class="placeholder">BRIGHTCOVE GOES HERE</div>
 
 “HOME IS A MATTER of perspective; it’s where you’re at,” a guy named Monster tells me at an encampment under the Spokane Street Viaduct that has around 50 residents living in beaten-up old RVs and tents and that boasts genius power systems involving car batteries, cables and generators.
 
