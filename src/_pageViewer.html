@@ -1,16 +1,24 @@
-<div class="page-viewer" data-start="<%= start %>">
+<div class="page-viewer" data-start="<%= start %>" data-count="<%= count %>">
   <div class="row">
     <div class="thumbs">
-      <% for (var i = start; i < start + 8 && i < grunt.data.json.journals.length; i++) { %>
+      <% for (var i = start; i < start + count && i < grunt.data.json.journals.length; i++) { %>
         <% var page = grunt.data.json.journals[i] %>
         <div class="thumb" data-index="<%= i %>">
-          <img src="./assets/pages/<%= page.scan %>">
+          <img src="./assets/thumbs/<%= page.scan %>">
         </div>
       <% } %>
     </div>
     <div class="feature">
       <img src="./assets/pages/<%= grunt.data.json.journals[start].scan %>">
+      <button class="toggle-text">
+        <img src="./assets/ic_receipt_black_18px.svg">
+        text
+      </button>
     </div>
-    <div class="text"></div>
+    <div class="text"><div class="content"></div></div>
+  </div>
+  <div class="mobile-controls">
+    <button class="goto previous">&laquo; previous</button>
+    <button class="goto next">next &raquo;</button>
   </div>
 </div>

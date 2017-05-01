@@ -1,10 +1,15 @@
 @small-screen: ~"(max-width: 1200px)";
+@big-screen: ~"(min-width: 1600px)";
 
 .page-viewer {
   .row {
     .display-flex();
     .align-items(center);
-    .flex-wrap(wrap);
+    .justify-content(center);
+    max-width: 1600px;
+    margin: auto;
+    
+    @media @small-screen { .flex-wrap(wrap) }
   }
 
   .thumbs {
@@ -12,6 +17,7 @@
     .display-flex();
     .flex-wrap(wrap);
     .align-items(center);
+    .justify-content(space-around);
 
     @media @small-screen {
       .flex(0 0 100%);
@@ -21,25 +27,53 @@
       .flex(0 0 50%);
       padding: 8px;
 
+      img {
+        max-height: 50vh;
+      }
+
       @media @small-screen { .flex(1 1 0%) }
     }
 
     img {
       display: block;
-      width: 100%;
+      margin: auto;
+      // width: 100%;
     }
   }
 
   .feature {
-    .flex(1 1 50%);
+    // .flex(1 1 50%);
+    position: relative;
     @media @small-screen { .flex(1 1 66%) }
 
     img {
       max-height: 100vh;
       display: block;
       margin: auto;
+    }
 
-      @media @small-screen { max-height: 80vh }
+    .toggle-text {
+      background: #FFFCED;
+      border: @df-light-gray;
+      border-radius: 3px 0 0 3px;
+      box-shadow: -8px 0 8px fade(black, 20%);
+      padding: 8px 4px;
+      text-transform: uppercase;
+      font-family: @df-sans;
+      color: @df-dark-gray;
+      position: absolute;
+      top: 10px;
+      right: 0;
+      cursor: pointer;
+
+      @media @mobile {
+        display: none;
+      }
+
+      img {
+        display: inline-block;
+        vertical-align: middle;
+      }
     }
   }
 
@@ -48,11 +82,67 @@
     padding: 0 20px;
     font-size: 15px;
     font-family: @df-sans;
+    display: none;
+    background: #FFFCED;
+    color: @df-dark-gray;
+    .align-self(stretch);
+    .align-items(center);
+    box-shadow: -16px 0 16px 0 fade(black, 10%);
+    z-index: 9;
+
+    @media @mobile {
+      margin-top: 20px;
+      display: block;
+      box-shadow: none;
+      padding: 20px;
+      box-shadow: inset 0 16px 16px 0 fade(black, 10%);
+    }
 
     @media @small-screen { .flex(1 0 300px) }
+
+    h1 {
+      color: @df-dark-gray;
+
+      @media @mobile {
+        font-size: 20px;
+      }
+    }
 
     p {
       margin: 0;
     }
   }
+
+  &.show-text {
+    .text {
+      .display-flex();
+
+      @media @mobile {
+        display: block;
+      }
+    }
+  }
+
+  .mobile-controls {
+    overflow: hidden;
+    padding: 10px 0;
+    display: none;
+
+    @media @mobile {
+      display: block;
+    }
+
+    .goto {
+      width: 50%;
+      float: left;
+      background: transparent;
+      border: none;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+  }
+
+
 }

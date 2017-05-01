@@ -1,3 +1,16 @@
+<?<%
+var makeViewer = (function() {
+  var i = 0;
+  return function(n) {
+    var out = `</article>
+${t.include("_pageViewer.html", { start: i, count: n })}
+<article class="story">`;
+    i += n;
+    return out;
+  };
+})();
+%>?>
+
 # Portraits of Homelessness
 
 “THEY DON’T BUILD mansions like this in Beverly Hills,” a man named Charles says as he greets visitors to a tent city beneath a tangle of highway overpasses in Seattle’s Sodo District.
@@ -11,6 +24,8 @@ What photographer Erika Schultz and I don’t realize on this first visit to “
 On this day, the rodents scurry across the mud and under the pallets that separate many of the tents from the soggy ground.
 
 In a matter of weeks, everyone we meet and everything we see here will be gone, swept out of sight at this location. But the gnawing crisis of homelessness will only have slogged to another patch of dirt or pavement in a perverse cycle of settling and uprooting.
+
+<?<%= makeViewer(4) %>?>
 
 At every turn, there are signs of what life must have been like before people found themselves living alongside and under Seattle’s streets.
 
@@ -32,11 +47,7 @@ An animator, radio DJ, recording artist, actor and father, Charles says he doesn
 
 But what to make of the situation in which we encountered these most marginalized of our neighbors, people who’ve made a life and in some cases forged community in places that lack running water, safe heating or a clear way out?
 
-<?
-</article>
-<%= t.include("_pageViewer.html", { start: 0 }) %>
-<article class="story">
-?>
+<?<%= makeViewer(4) %>?>
 
 “HOME IS A MATTER of perspective; it’s where you’re at,” a guy named Monster tells me at an encampment under the Spokane Street Viaduct that has around 50 residents living in beaten-up old RVs and tents and that boasts genius power systems involving car batteries, cables and generators.
 
@@ -45,6 +56,8 @@ Monster lives here with his partner and volunteers as an organizer and advocate 
 One section of the camp is open to all, meaning it doesn’t matter if you’re a sex offender, have a mental disorder or carry a criminal record. But the way Monster sees it, “low-barrier” encampments are needed because everyone deserves to live somewhere.Weeks after we speak, however, the city clears this camp, too, following a fire that destroyed two motor homes.
 
 “It’s another human life,” he tells me.
+
+<?<%= makeViewer(3) %>?>
 
 Wherever you lay your hat is your home: If only it were that simple.
 
@@ -58,11 +71,7 @@ Up until now, nothing — certainly not the clearing of encampments — seems to
 
 In 2016, there were more than 4,500 “unsheltered” people sleeping in tents; in doorways; in green spaces; on benches; in cars, trucks and RVs, etc.: a 19 percent increase over the previous year, according to the annual [One Night Count](http://www.homelessinfo.org/what_we_do/one_night_count/2016_results.php) survey by the Seattle/King County Coalition on Homelessness.
 
-<?
-</article>
-<%= t.include("_pageViewer.html", { start: 8 }) %>
-<article class="story">
-?>
+<?<%= makeViewer(4) %>?>
 
 SEVERAL OF THE PEOPLE who speak to us as we search for subjects for this story say they’ve figured out how to live this way long-term.
 
@@ -108,11 +117,7 @@ Suezan, who lives in an RV and commutes between Seattle and California where she
 
 “I get goose-bumps just thinking about it,” she says.
 
-<?
-</article>
-<%= t.include("_pageViewer.html", { start: 16 }) %>
-<article class="story">
-?>
+<?<%= makeViewer(4) %>?>
 
 “ARE YOU HUNGRY — do you want a sandwich?” someone calls out to us.
 
@@ -127,6 +132,8 @@ For Jackson, 28, this is personal. Her mom used to live on the streets, she expl
 Showing residents of the camps just a little generosity and humanity goes a long way, she says. So she decided to come back this year.
 
 Jackson took $100 of her savings and turned it into 80 sandwiches. Each person who accepts a sandwich gets a prayer and maybe a hug, if needed.
+
+<?<%= makeViewer(4) %>?>
 
 At a camp along Interstate 90 east of “The Field,” a couple named Leo and Marie help lead a cleanup project to keep their area litter-free. They got an assist from a nearby homeowner, Mark Lloyd, who takes us through the camp to show the good work residents are doing to keep it tidy. Lloyd donated rakes, shovels, garbage cans and bags, and even a set of privacy tents outfitted with portable toilets that dot the property.
 
