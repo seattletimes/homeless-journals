@@ -1,15 +1,13 @@
+@dark-bg: #3c3200;
+@light-bg: #f7f5db;
+
 @import "seattletimes";
 @import "viewer";
 
 body {
   margin: 0;
-  background: darken(@df-dark-gray, 10%);
+  background: @light-bg;
   background-attachment: fixed;
-  color: @df-off-white;
-}
-
-h1, h2 {
-  color: @df-off-white;
 }
 
 header.intro {
@@ -48,11 +46,11 @@ article.story {
   max-width: 600px;
 
   a {
-    color: @df-light-gray;
+    color: @dark-bg;
     text-decoration: underline;
 
     &:visited {
-      color: @df-middle-gray;
+      color: @df-dark-gray;
     }
   }
 }

@@ -2,6 +2,9 @@
 @big-screen: ~"(min-width: 1600px)";
 
 .page-viewer {
+  background: @dark-bg;
+  padding: 40px 0;
+
   .row {
     .display-flex();
     .align-items(center);
@@ -86,7 +89,7 @@
     font-family: @df-sans;
     display: none;
     background: #FFFCED;
-    color: @df-dark-gray;
+    color: @df-off-black;
     .align-self(stretch);
     .align-items(center);
     box-shadow: -16px 0 16px 0 fade(black, 10%);
@@ -103,7 +106,6 @@
     @media @small-screen { .flex(1 0 300px) }
 
     h1 {
-      color: @df-dark-gray;
 
       @media @mobile {
         font-size: 20px;
