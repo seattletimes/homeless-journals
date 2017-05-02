@@ -102,34 +102,10 @@
     "scan": "7B.jpg"
   },
   {
-    "name": "Martes",
-    "age": 37,
-    "text": "\"Cant wait to get out of here\" In the meantime I try to call this home.",
-    "scan": "30.jpg"
-  },
-  {
     "name": "Vince",
     "age": 40,
     "text": "I myself have never been homeless before and had a negative perception of being homeless. I am from Fresno, CA and homeless is looked as someone on drugs, lazy. I came to Seattle there was a lot of help for homeless and services. Seattle a great city and really helps.",
     "scan": "15.jpg"
-  },
-  {
-    "name": "Thiago Cross",
-    "age": 45,
-    "text": "In a capitalistic society poverty is worst than slavery.",
-    "scan": "18.jpg"
-  },
-  {
-    "name": "Joey Bear, Aka Joe Deets",
-    "age": 40,
-    "text": "I was first person to graduate drug court homeless. It took me 3½ years. I open drug court to many people. Pioner Housing rules, V.A. Even now you can skip work release because of my sacrifice. \nI ended up relasping. Got arrested. A year later. Lost my everything. R.V. stuff, cats, my girl. I came out to Sodo. I got caught up in sting. Oliver Twist. That was why I got in drug court. I thought I should give back.\nLongshoreman Hall supplied my clean up. I clean up 1st and Spokane. To feel right about my past. Going to court and took my case to trial. Got 6 months of C-Cap. Was gifted a car. Trying selling it to get my home started again. Right now I don’t know next step but just keep picking up trash. Hopeful to hold hope. Each day.",
-    "scan": "21.jpg"
-  },
-  {
-    "name": "Eric",
-    "age": 49,
-    "text": "My Life is a Living Hell!!! Being disabled for life, I recieve rotton benifits, should of had my Social Security years ago. I need an Advocate that could assist me in the comunity, and that can get me into housing, not next year, but yes month, yes I’m talking I need housing March 1, 2017. Can Anyone Help",
-    "scan": "05.jpg"
   },
   {
     "name": "Rico",
@@ -142,5 +118,29 @@
     "age": 35,
     "text": "and moved in that same night with a tent I bought off one of the persons I meet there and have been here ever since. What I though would be a good idea to save mony since I don’t have to pay a motel room. Then a couple of weeks later I come back from work and turn in my work ticket to get paid. And then get my check back I come to find out I was getting my check garnished by the Department of Deffense for a medical bill I cannot afford. In Two Thousand Ten I was stabbed in an altercation in downtown San Antonio. The bill was for open heart surgery. So that has extended my stay here a little bite longer than I thought so. But looking on the brighter side of all this seris of unfortunit event a what I call a blessing I meet my lovely girlfriend who is now my fianceé. Whe hope to get out of here soon so we can get mairred.",
     "scan": "33_BACK.jpg"
+  },
+  {
+    "name": "Joey Bear, Aka Joe Deets",
+    "age": 40,
+    "text": "I was first person to graduate drug court homeless. It took me 3½ years. I open drug court to many people. Pioner Housing rules, V.A. Even now you can skip work release because of my sacrifice. \nI ended up relasping. Got arrested. A year later. Lost my everything. R.V. stuff, cats, my girl. I came out to Sodo. I got caught up in sting. Oliver Twist. That was why I got in drug court. I thought I should give back.\nLongshoreman Hall supplied my clean up. I clean up 1st and Spokane. To feel right about my past. Going to court and took my case to trial. Got 6 months of C-Cap. Was gifted a car. Trying selling it to get my home started again. Right now I don’t know next step but just keep picking up trash. Hopeful to hold hope. Each day.",
+    "scan": "21.jpg"
+  },
+  {
+    "name": "Thiago Cross",
+    "age": 45,
+    "text": "In a capitalistic society poverty is worst than slavery.",
+    "scan": "18.jpg"
+  },
+  {
+    "name": "Martes",
+    "age": 37,
+    "text": "\"Cant wait to get out of here\" In the meantime I try to call this home.",
+    "scan": "30.jpg"
+  },
+  {
+    "name": "Eric",
+    "age": 49,
+    "text": "My Life is a Living Hell!!! Being disabled for life, I recieve rotton benifits, should of had my Social Security years ago. I need an Advocate that could assist me in the comunity, and that can get me into housing, not next year, but yes month, yes I’m talking I need housing March 1, 2017. Can Anyone Help",
+    "scan": "05.jpg"
   }
 ]
