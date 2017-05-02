@@ -1,5 +1,5 @@
-@dark-bg: #3c3200;
-@light-bg: #f7f5db;
+@dark-bg: #221D21;
+@light-bg: #FFFEF2;
 
 @import "seattletimes";
 @import "viewer";
@@ -11,7 +11,7 @@ body {
 }
 
 header.intro {
-  margin: 40px auto;
+  margin: 40px auto 0;
 
   h1, h2, p {
     margin: 20px auto;
@@ -20,11 +20,19 @@ header.intro {
 
   h1 {
     text-align: center;
-    margin: 20px auto;
+    margin: 0 auto 20px;
     font-size: 48px;
 
     @media @mobile {
       font-size: 32px;
+    }
+  }
+
+  p {
+    font-family: @df-sans;
+    @media @mobile {
+      margin-left: 10px;
+      margin-right: 10px;
     }
   }
 
@@ -60,5 +68,6 @@ article.story {
   text-align: center;
   font-family: @df-sans;
   text-transform: uppercase;
-  background: @df-dark-gray;
+  background: @dark-bg;
+  color: white;
 }

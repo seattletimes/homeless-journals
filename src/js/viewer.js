@@ -17,12 +17,15 @@ viewers.forEach(function(v) {
     feature.src = `./assets/pages/${page.scan}`;
     text.innerHTML = `
 <h1>${page.name}, ${page.age}</h1>
+<a class="toggle-text">[ show transcript ]</a>
 <p>${page.text}
     `
   };
 
   thumbs.forEach(t => t.addEventListener("click", function() {
     var index = this.getAttribute("data-index");
+    $(".active.thumb", v).forEach(el => el.classList.remove("active"));
+    this.classList.add("active");
     current = index;
     var page = window.journalData[index];
     selectImage(page);
@@ -30,9 +33,11 @@ viewers.forEach(function(v) {
 
   selectImage(window.journalData[start]);
 
-  var toggleText = $.one(".toggle-text", v);
-
-  toggleText.addEventListener("click", () => v.classList.toggle("show-text"));
+  v.addEventListener("click", function(e) {
+    if (e.target.classList.contains("toggle-text")) {
+      v.classList.toggle("show-text");
+    }
+  });
 
   var stepImage = function() {
     var increment = this.classList.contains("next") ? 1 : -1;

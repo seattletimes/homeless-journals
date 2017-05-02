@@ -3,17 +3,13 @@
     <div class="thumbs">
       <% for (var i = start; i < start + count && i < grunt.data.json.journals.length; i++) { %>
         <% var page = grunt.data.json.journals[i] %>
-        <div class="thumb" data-index="<%= i %>">
+        <div class="thumb <%= i == start ? "active" : "" %>" data-index="<%= i %>">
           <img src="./assets/thumbs/<%= page.scan %>">
         </div>
       <% } %>
     </div>
     <div class="feature">
       <img src="./assets/pages/<%= grunt.data.json.journals[start].scan %>">
-      <button class="toggle-text">
-        <img src="./assets/ic_receipt_black_18px.svg">
-        text
-      </button>
     </div>
     <div class="text"><div class="content"></div></div>
   </div>

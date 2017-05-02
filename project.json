@@ -6,14 +6,14 @@
     },
     "live": {
       "bucket": "projects.seattletimes.com",
-      "path": ""
+      "path": "2017/portraits-of-homelessness"
     }
   },
-  "title": "",
-  "description": "",
-  "url": "",
+  "title": "Portraits of Homelessness",
+  "description": "Pacific NW magazine invited residents of several homeless encampments in Seattle to share their personal stories, life lessons, frustrations and dreams based on their experiences living without permanent shelter.",
+  "url": "http://projects.seattletimes.com/2017/portraits-of-homelessness/",
   "image": "assets/social.jpg",
   "sheets": ["1hb9_URtDf05-g36WhBiqc6yG6KT05VC76vnosZ-3aKk"],
   "production": false,
-  "embedded": true
+  "embedded": false
 }
