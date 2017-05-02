@@ -11,7 +11,7 @@ ${t.include("_pageViewer.html", { start: i, count: n })}
 })();
 %>?>
 
-“THEY DON’T BUILD mansions like this in Beverly Hills,” a man named Charles says as he greets visitors to a tent city beneath a tangle of highway overpasses in Seattle’s Sodo District.
+**“THEY DON’T BUILD** mansions like this in Beverly Hills,” a man named Charles says as he greets visitors to a tent city beneath a tangle of highway overpasses in Seattle’s Sodo District.
 
 It’s a cold, damp day, and Charles warms himself by a smoldering campfire in a cluttered cul-de-sac of tents, bags of clothes, and pots and pans — everything you need when you have no place else to live.
 
@@ -46,14 +46,19 @@ An animator, radio DJ, recording artist, actor and father, Charles says he doesn
 But what to make of the situation in which we encountered these most marginalized of our neighbors, people who’ve made a life and in some cases forged community in places that lack running water, safe heating or a clear way out?
 
 </article>
-<div class="placeholder">BRIGHTCOVE GOES HERE</div>
+<div class="video-container">
+  <iframe src="//players.brightcove.net/1509317113/default_default/index.html?videoId=5412572593001" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+</div>
+<div class="credit">
+  Corinne Chin, Lauren Frohne, Erika Schultz / The Seattle Times
+</div>
 <article class="story">
 
-“HOME IS A MATTER of perspective; it’s where you’re at,” a guy named Monster tells me at an encampment under the Spokane Street Viaduct that has around 50 residents living in beaten-up old RVs and tents and that boasts genius power systems involving car batteries, cables and generators.
+**“HOME IS A MATTER** of perspective; it’s where you’re at,” a guy named Monster tells me at an encampment under the Spokane Street Viaduct that has around 50 residents living in beaten-up old RVs and tents and that boasts genius power systems involving car batteries, cables and generators.
 
 Monster lives here with his partner and volunteers as an organizer and advocate for the community. He calls this location, which is sheltered from the rain, “the perfect spot” because it’s not close to homeowners who might complain.
 
-One section of the camp is open to all, meaning it doesn’t matter if you’re a sex offender, have a mental disorder or carry a criminal record. But the way Monster sees it, “low-barrier” encampments are needed because everyone deserves to live somewhere.Weeks after we speak, however, the city clears this camp, too, following a fire that destroyed two motor homes.
+One section of the camp is open to all, meaning it doesn’t matter if you’re a sex offender, have a mental disorder or carry a criminal record. But the way Monster sees it, “low-barrier” encampments are needed because everyone deserves to live somewhere. Weeks after we speak, however, the city clears this camp, too, following a fire that destroyed two motor homes.
 
 “It’s another human life,” he tells me.
 
@@ -75,7 +80,7 @@ In 2016, there were more than 4,500 “unsheltered” people sleeping in tents; 
 
 <?<%= addViewer(3) %>?>
 
-SEVERAL OF THE PEOPLE who speak to us as we search for subjects for this story say they’ve figured out how to live this way long-term.
+**SEVERAL OF THE PEOPLE** who speak to us as we search for subjects for this story say they’ve figured out how to live this way long-term.
 
 If you were to ignore the semis rumbling frighteningly close to Will Ross’ immaculate space in a parking lot under an elevated roadway in Sodo, you’d swear you were in the home of a stylish neat freak.
 
@@ -123,7 +128,7 @@ Suezan, who lives in an RV and commutes between Seattle and California where she
 
 <?<%= addViewer(4) %>?>
 
-“ARE YOU HUNGRY — do you want a sandwich?” someone calls out to us.
+**“ARE YOU HUNGRY** — do you want a sandwich?” someone calls out to us.
 
 Veronica Jackson stands at the entrance to a camp along South Dearborn Street with a crate full of sandwiches that she and several cousins made earlier that day.
 
