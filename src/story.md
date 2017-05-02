@@ -1,7 +1,7 @@
 <?<%
 var addViewer = (function() {
   var i = 0;
-  return function(n) {
+  return function(n = 4) {
     var out = `</article>
 ${t.include("_pageViewer.html", { start: i, count: n })}
 <article class="story">`;
@@ -78,7 +78,7 @@ Up until now, nothing — certainly not the clearing of encampments — seems to
 
 In 2016, there were more than 4,500 “unsheltered” people sleeping in tents; in doorways; in green spaces; on benches; in cars, trucks and RVs, etc.: a 19 percent increase over the previous year, according to the annual [One Night Count](http://www.homelessinfo.org/what_we_do/one_night_count/2016_results.php) survey by the Seattle/King County Coalition on Homelessness.
 
-<?<%= addViewer(3) %>?>
+<?<%= addViewer(4) %>?>
 
 **SEVERAL OF THE PEOPLE** who speak to us as we search for subjects for this story say they’ve figured out how to live this way long-term.
 

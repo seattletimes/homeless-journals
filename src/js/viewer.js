@@ -16,7 +16,7 @@ viewers.forEach(function(v) {
   var selectImage = function(page) {
     feature.src = `./assets/pages/${page.scan}`;
     text.innerHTML = `
-<h1>${page.name}, ${page.age}</h1>
+<h1>${page.name}, ${page.age || "no age given"}</h1>
 <a class="toggle-text">[ show transcript ]</a>
 <p>${page.text}
     `

@@ -14,6 +14,6 @@
   "url": "http://projects.seattletimes.com/2017/portraits-of-homelessness/",
   "image": "assets/social.jpg",
   "sheets": ["1hb9_URtDf05-g36WhBiqc6yG6KT05VC76vnosZ-3aKk"],
-  "production": false,
+  "production": true,
   "embedded": false
 }

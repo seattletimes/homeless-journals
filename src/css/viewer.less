@@ -3,11 +3,16 @@
 
 .page-viewer {
   background: @dark-bg;
-  padding: 40px 0;
+  padding: 60px 0;
   background-image: url(./assets/galleryEdge.jpg), url(./assets/galleryEdgeLower.jpg);
   background-repeat: no-repeat;
   background-position: top center, bottom center;
   background-size: 100% auto;
+
+  @media @big-screen {
+    background-repeat: repeat-x;
+    background-size: auto;
+  }
 
   .row {
     .display-flex();
