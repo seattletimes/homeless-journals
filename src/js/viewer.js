@@ -17,7 +17,7 @@ viewers.forEach(function(v) {
     feature.src = `./assets/pages/${page.scan}`;
     text.innerHTML = `
 <h1>${page.name.trim()}, ${page.age || "no age given"}</h1>
-<a class="toggle-text">[ show transcript ]</a>
+<a class="toggle-text">show caption &raquo;</a>
 <p>${page.text}
     `
   };

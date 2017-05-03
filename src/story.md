@@ -1,5 +1,4 @@
-<?<%
-var addViewer = (function() {
+<?<% var addViewer = (function() {
   var i = 0;
   return function(n = 4) {
     var out = `</article>
@@ -8,8 +7,7 @@ ${t.include("_pageViewer.html", { start: i, count: n })}
     i += n;
     return out;
   };
-})();
-%>?>
+})();%>?>
 
 **“THEY DON’T BUILD** mansions like this in Beverly Hills,” a man named Charles says as he greets visitors to a tent city beneath a tangle of highway overpasses in Seattle’s Sodo District.
 
@@ -47,7 +45,7 @@ But what to make of the situation in which we encountered these most marginalize
 
 </article>
 <div class="video-container">
-  <iframe src="//players.brightcove.net/1509317113/default_default/index.html?videoId=5412572593001" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+  <iframe src="//players.brightcove.net/1509317113/HklBo65Ukb_default/index.html?videoId=5412572593001" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
 </div>
 <div class="credit">
   Corinne Chin, Lauren Frohne, Erika Schultz / The Seattle Times
