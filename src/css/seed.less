@@ -77,8 +77,9 @@ article.story {
   }
 }
 
-aside.gallery.pitch {
+aside.pitch {
   float: right;
+  clear: right;
   width: 33%;
   min-width: 200px;
   background: @dark-bg;
@@ -87,10 +88,15 @@ aside.gallery.pitch {
   padding: 20px;
   font-size: 15px;
   margin-left: 20px;
+  margin-bottom: 40px;
   background-image: url(./assets/galleryEdge.jpg), url(./assets/galleryEdgeLower.jpg);
   background-repeat: repeat-x;
   background-size: 100%;
   background-position: top, bottom;
+
+  a, a:visited, a:active {
+    color: white;
+  }
 
   @media @mobile {
     float: none;
