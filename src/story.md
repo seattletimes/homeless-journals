@@ -45,7 +45,7 @@ But what to make of the situation in which we encountered these most marginalize
 
 </article>
 <div class="video-container">
-  <iframe src="//players.brightcove.net/1509317113/HklBo65Ukb_default/index.html?videoId=5412572593001" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+  <script src="https://cdn.jwplayer.com/players/gGwf6M7Q-UXknQA8J.js"></script>
 </div>
 <div class="credit">
   Corinne Chin, Lauren Frohne, Erika Schultz / The Seattle Times
